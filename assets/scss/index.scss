@@ -1,0 +1,526 @@
+$info: #82AEF5;
+$color2: #FFD8FF;
+$color3: #82AEF5;
+$color4: #EBD559;
+$verdeagua: #0079BC;
+$negrogrisaceo: #333333;
+$blancogris:  #f8f8f8;
+$montserrat: "Montserrat", sans-serif;
+$roboto: "Roboto", sans-serif;
+$nunito: "Nunito", sans-serif;
+@import "../bootstrap-5.2.2/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@400;700&display=swap');
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "color2":     $color2
+);
+@import "../bootstrap-5.2.2/scss/bootstrap.scss";
+
+/*-------------------------------------------------------------scss nico---------------------------------------------*/
+p{
+    font-family: $roboto;
+    font-size: 20px;
+}
+h1{
+    font-family: $nunito;
+}
+.bg-color1{
+    background-color: $info;
+}
+.bg-color3{
+    background-color: $color3;
+}
+.text-color1{
+    color: $info;
+}
+.fs-13{
+    font-size: 13px;
+}
+.fs-15{
+    font-size: 15px;
+}
+.fs-17{
+    font-size: 17px;
+}
+.fs-121{
+    font-size: 121px;
+}
+.fs-25{
+    font-size: 25px;
+}
+.top-10{
+    top: 50%;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    font-family: $nunito;
+    text-decoration: none;
+    color: #ffffff;
+}
+.logo{
+    text-transform: uppercase;
+}
+.link-info{
+    &:hover{
+        color: $color3;
+    }
+    &:active{
+        color: $color3;
+    }
+}
+.home-banner{
+    height: 600px;
+    width: 100%;
+    background-image: url("../img/estuata.jpeg");
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    position: relative;
+}
+.home-banner2{
+    height: 600px;
+    width: 100%;
+    background-image: url("../img/homedefault.jpg");
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    position: relative;
+}
+.home-banner3{
+    height: 600px;
+    width: 100%;
+    background-image: url("../img/disneyland/0910ZR_0029CR_R3_RTD_51578b3c-f4b9-4b12-916b-56591be853d7.png");
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    position: relative;
+}
+.home-banner4{
+    height: 600px;
+    width: 100%;
+    background-image: url("../img/3240354.jpg");
+    background-size: cover;
+
+    background-repeat: no-repeat;
+    position: relative;
+}
+.tbanner{
+    padding: 150px;
+    font-family: $nunito;
+    font-size: 40px;
+    font-weight: bold;
+}
+.card-nico{
+    background-color: $color2;
+    border-radius: 16px;
+
+}
+.banner{
+    width: 100%;
+    height: 307px;
+    background-image: url("../img/unknown\ \(2\).png");
+    background-size: cover;
+}
+.universal-img{
+    margin-top: 10%;
+    width:700px
+}
+
+
+
+@media (max-width: 992px) {
+    .fs-121{
+        font-size: 30px;
+        top: 10%
+    }
+    main img{
+        width: 100%;
+        height: 200px;
+    }
+    .universal-img{
+        width: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .fs-121{
+        font-size: 30px;
+        top: 10%
+    }
+    main img{
+        width: 100%;
+        height: 200px;
+    }
+    .universal-img{
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+    .fs-121{
+        font-size: 30px;
+        top: 10%
+    }
+    main img{
+        width: 100%;
+        height: 200px;
+    }
+    .universal-img{
+        width: 100%;
+    }
+}
+/*--------------------home cata----------------------------------*/
+h1{
+    font-size: 50px;
+    font-family: $roboto;
+    font-weight: 400;
+}
+
+.font-title{
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+}
+
+h3{
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+}
+.white{
+    color: #f8f8f8;
+}
+.blue{
+    color: #0079BC;
+}
+
+.black{
+    color: #333333;
+}
+
+.cards{
+    width: calc(100%/4);
+    margin: 0 5px;
+}
+
+.pcardcenter{
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+.imgcard{
+    height: 170px;
+    padding-top: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
+    a{
+        :hover{
+            width: 300px;
+            height: 220px;
+        }
+    }
+}
+
+.card1{
+    width: 380px;
+    height: 450px;
+    margin-right: calc(100%/10);
+    border-left:solid 3px #0079BC;
+    img{
+        width: 380px;
+        height: 300px;
+    }
+}
+
+.card2{
+    width: 300px;
+    height: 450px;
+    border-left:solid 3px #0079BC;
+    img{
+        height: 300px;
+    }
+}
+
+.card3{
+    width: 300px;
+    height: 450px;
+    margin-left: 40px;
+    border-left:solid 3px #0079BC;
+    img{
+        height: 300px;
+    }
+}
+
+.imgnovedad1{
+    width: 450px;
+    height: 300px;
+    padding: 0;
+}
+
+.title{
+    color: #333333;
+}
+
+
+@media screen and (min-width: 576px){
+    .cards-wrapper{
+        display: flex;
+    }
+    .card-a{
+        margin: 0 5px;
+        width: calc(100%/3);
+        height: 400px;
+    }
+    .image-wrapper{
+        img{
+            height: 250px;
+            margin: 0 auto;
+            padding: 5px;
+        }
+    }
+}
+
+.backblue{
+    background-color: #0079BC;
+}
+
+.contactfooter{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    width: 500px;
+    color: #ffffff;
+}
+
+.rrssfooter{
+    width: 300px;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    img{
+        width: 57px;
+        height: 30px;
+    }
+}
+
+.footer{
+    margin-left: 100px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.imgsfooter{
+    margin-right: 100px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img{
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+    }
+}
+
+.waltdisneyw-banner{
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/waltdisney.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imgleft{
+    width: 600px;
+    margin-left: -100px;
+    height: 290px;
+}
+.imgright{
+    width: 600px;
+    margin-right: -95px;
+    height: 290px;
+}
+
+.backyellow2{
+    background-color: #ebdfa0;
+    height: 370px;
+    display: flex;
+}
+.backyellow{
+    background-color: #ebdfa0;
+    height: 370px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.backpink{
+    background-color: #FFD8FF;
+    height: 370px;
+    margin-right: -50px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.imagcarrusel{
+    width: 800px;
+    height: 400px;
+    margin-left: calc(100%/7);
+}
+
+/*-----------------------------clases responsive pantalla phone--------------------------------*/
+
+@media screen and (max-width: 576px) {
+    .card-a:not(:first-child){
+        display: none;
+    }
+
+    .card-a{
+        height: 350px;
+    }
+
+    .image-wrapper{
+        img{
+            width: 100%;
+            height: 200px;
+        }
+    }
+    .imagcarrusel{
+        width: 800px;
+        height: 400px;
+        margin-left: 0%;
+    }
+
+    .hotelesdestacados{
+        margin-top: 10px;
+    }
+    .card3{
+        width: 100%;
+        margin-left: 0px;
+        border-left:solid 3px #0079BC;
+    }
+    .card1{
+        width: 100%;
+        margin-right: 0px;
+        border-left:solid 3px #0079BC;
+    }
+    
+    .card2{
+        width: 100%;
+        border-left:solid 3px #0079BC;
+    }
+    .imgleft{
+        width: 100%;
+        margin-left: 0px;
+        height: 290px;
+    }
+    .imgright{
+        width: 100%;
+        margin-right: 0px;
+        height: 290px;
+    }
+    
+    .backyellow{
+        display: none;
+        background-color: #ffffff;
+        height: 370px;
+        margin-right: -50px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .backpink{
+        display: none;
+        background-color: #ffffff;
+        height: 370px;
+        margin-right: -50px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .contactfooter{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        width: 100%;
+        color: #ffffff;
+    }
+    
+    .footer{
+        margin-left: 10px;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 0px;
+    }
+    .imgsfooter{
+        margin-right: 20px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        img{
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+        }
+    }
+    .logost{
+        width: 100px;
+        height: 80px;
+    }
+    
+}
+
+/*-----------------fin de responsive------------------*/
+.logost{
+    width: 150px;
+    height: 100px;
+}
+.footercenter{
+    display: flex;
+    justify-content: start;
+}
+
+.ustudiosr-banner{
+    width: 100%;
+    height: 600px;
+    background-image: url("../img/universalstudio.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rightboton{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.centerboton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
